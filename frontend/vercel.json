@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://YOUR-HF-USERNAME-driver-profiler.hf.space/api/:path*" }
+  ]
+}

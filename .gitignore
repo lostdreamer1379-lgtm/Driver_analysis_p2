@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Frontend build
+frontend/build/
+frontend/.cache/
+
+# Data (regenerate via training pipeline)
+data/cache/*
+data/raw/*.csv
+data/raw/progress.json
+data/processed/*.csv
+data/processed/*.npz
+!data/cache/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Models (regenerate via training pipeline)
+model-server/models/*.pkl
+model-server/models/*.json
+model-server/models/*.keras
+!model-server/models/production/.gitkeep
+model-server/models/production/*
+!model-server/models/production/.gitkeep
+
+# Evaluation output
+evaluation_report/*.png
+evaluation_report/*.json
+!evaluation_report/.gitkeep
+
+# Env
+.env
+.env.local
+.vercel
+
+# OS
+.DS_Store
